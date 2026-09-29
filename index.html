@@ -14,35 +14,35 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
         :root {
-            --bg-color: #fafafa;
+            --bg-color: #ffffff;
             --container-bg: #ffffff;
-            --text-color: #111111;
-            --border-color: #e8e8e8;
-            --secondary-text: #6b7280;
-            --tertiary-text: #4b5563;
-            --button-bg: #111111;
+            --text-color: #000000;
+            --border-color: #e5e5e5;
+            --secondary-text: #777777;
+            --tertiary-text: #444444;
+            --button-bg: #000000;
             --button-text: #ffffff;
-            --button-hover: #2b2b2b;
-            --field-bg: #f5f5f5;
-            --slider-bg: #ececec;
-            --copy-btn-color: #6b7280;
-            --checkbox-border: #d1d5db;
+            --button-hover: #333333;
+            --field-bg: #fafafa;
+            --slider-bg: #f0f0f0;
+            --copy-btn-color: #555555;
+            --checkbox-border: #d0d0d0;
         }
 
         [data-theme="dark"] {
-            --bg-color: #0a0a0a;
-            --container-bg: #141414;
-            --text-color: #f5f5f5;
-            --border-color: #262626;
-            --secondary-text: #9ca3af;
-            --tertiary-text: #d1d5db;
-            --button-bg: #f5f5f5;
-            --button-text: #111111;
-            --button-hover: #ffffff;
-            --field-bg: #1f1f1f;
-            --slider-bg: #2a2a2a;
-            --copy-btn-color: #9ca3af;
-            --checkbox-border: #404040;
+            --bg-color: #0f0f0f;
+            --container-bg: #1a1a1a;
+            --text-color: #ffffff;
+            --border-color: #333333;
+            --secondary-text: #b0b0b0;
+            --tertiary-text: #cccccc;
+            --button-bg: #ffffff;
+            --button-text: #000000;
+            --button-hover: #e0e0e0;
+            --field-bg: #2a2a2a;
+            --slider-bg: #404040;
+            --copy-btn-color: #b0b0b0;
+            --checkbox-border: #555555;
         }
 
         body {
@@ -60,14 +60,12 @@
         .container {
             width: 100%;
             max-width: 400px;
-            padding: 38px 32px 32px;
-            margin-top: 38px;
+            padding: 40px;
             border: 1px solid var(--border-color);
-            border-radius: 18px;
+            border-radius: 8px;
             background: var(--container-bg);
             position: relative;
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.07);
-            transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            transition: background 0.3s ease, border-color 0.3s ease;
         }
 
         .theme-toggle {
@@ -76,9 +74,9 @@
             right: 20px;
             background: transparent;
             border: 1px solid var(--border-color);
-            border-radius: 10px;
-            width: 34px;
-            height: 34px;
+            border-radius: 4px;
+            width: 32px;
+            height: 32px;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -117,9 +115,8 @@
         }
 
         .header h1 {
-            font-size: 22px;
-            font-weight: 650;
-            letter-spacing: -0.02em;
+            font-size: 28px;
+            font-weight: 600;
             color: var(--text-color);
             margin-bottom: 8px;
         }
@@ -129,13 +126,8 @@
         }
 
         .section-title {
-            font-size: 12px;
+            font-size: 16px;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            color: var(--secondary-text);
-            margin-bottom: 18px;
-        }
             color: var(--text-color);
             margin-bottom: 16px;
         }
@@ -200,10 +192,10 @@
         }
 
         .checkbox {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             border: 1px solid var(--checkbox-border);
-            border-radius: 6px;
+            border-radius: 2px;
             margin-right: 16px;
             position: relative;
             transition: all 0.2s ease;
@@ -217,10 +209,10 @@
         .option.active .checkbox::after {
             content: "✓";
             position: absolute;
-            top: 0px;
-            left: 4px;
+            top: -2px;
+            left: 3px;
             color: var(--button-text);
-            font-size: 11px;
+            font-size: 10px;
         }
 
         .option-label {
@@ -240,7 +232,7 @@
             width: 60px;
             padding: 8px 12px;
             border: 1px solid var(--border-color);
-            border-radius: 10px;
+            border-radius: 4px;
             font-size: 14px;
             font-weight: 500;
             background: var(--field-bg);
@@ -294,7 +286,7 @@
             width: 100%;
             padding: 16px;
             border: 1px solid var(--border-color);
-            border-radius: 12px;
+            border-radius: 4px;
             font-family: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
             font-size: 13px;
             font-weight: 500;
