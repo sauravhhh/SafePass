@@ -257,19 +257,25 @@
             background: var(--button-bg);
             color: var(--button-text);
             border: none;
-            padding: 12px 16px;
-            border-radius: 4px;
-            font-size: 14px;
+            padding: 14px 16px;
+            border-radius: 14px;
+            font-size: 15px;
             font-weight: 600;
             cursor: pointer;
-            transition: background 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
             font-family: 'Inter', sans-serif;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
         }
 
         .generate-btn:hover {
             background: var(--button-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+        }
+
+        .generate-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
         }
 
         .password-container {
@@ -333,22 +339,27 @@
             position: absolute;
             right: 12px;
             top: 12px;
-            background: transparent;
-            color: var(--copy-btn-color);
-            border: none;
-            padding: 4px 8px;
-            border-radius: 4px;
+            background: var(--container-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 7px 16px;
+            border-radius: 999px;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 600;
             cursor: pointer;
             display: none;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: color 0.3s ease;
+            transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
         }
 
         .copy-btn:hover {
-            color: var(--text-color);
+            background: var(--field-bg);
+            border-color: var(--checkbox-border);
+            transform: translateY(-1px);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0);
         }
 
         .security-info {
